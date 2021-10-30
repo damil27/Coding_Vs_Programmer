@@ -16,6 +16,7 @@ body {
   color: var(--color-body);
   line-height: 1.2;
 }
+/* Typography */
 h1,
 h2,
 h3,
@@ -37,7 +38,6 @@ h3 {
 p {
   margin-top: 0;
 }
-
 @media screen and (min-width: 1024) {
   body {
     font-size: 1.8rem;
@@ -50,5 +50,30 @@ p {
   }
   h3 {
     font-size: 2.8rem;
+  }
+}
+
+/* Link */
+a {
+  text-decoration: none;
+}
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.link-arrow::after {
+  content: "-->";
+  margin-left: 4px;
+}
+.link-arrow:hover::after {
+  margin-left: 10px;
+  transition: margin 0.3s;
+}
+
+@media screen and (min-width: 1024) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
