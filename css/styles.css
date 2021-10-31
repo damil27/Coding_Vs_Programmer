@@ -296,6 +296,17 @@ input {
 .plan .list__item {
   margin-bottom: 2rem;
 }
+.plan--popular .card__header {
+  position: relative;
+}
+.plan--popular .card__header::before {
+  content: url(../images/icons/popular.svg);
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -4px;
+  right: 5%;
+}
 @media screen and (min-width: 1024) {
   .plan__name {
     font-size: 1.4rem;
@@ -309,4 +320,20 @@ input {
   .plan__billing-cycle {
     font-size: 1.6rem;
   }
+}
+
+/* media styling code */
+
+.media {
+  display: flex;
+}
+.media__title {
+  margin: 0;
+}
+.media__body {
+  margin: 0 3rem;
+}
+
+.media__image {
+  margin-top: 0.7rem;
 }
