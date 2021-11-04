@@ -23,7 +23,7 @@
         <div><img src="images/logo.svg" alt="" /></div>
       </a>
       <svg class="icon icon--primary nav__toggler">
-        <use xlink:href="images/Sprite.svg#menu"></use>
+        <use href="images/Sprite.svg#menu"></use>
       </svg>
       <ul class="nav__list collapsible__content">
         <li class="nav__item"><a href="#">nav 1</a></li>
@@ -67,7 +67,7 @@
       <input type="text" class="input" placeholder="Enter your Search..." />
       <button class="btn btn--accent">
         <svg class="icon icon--primary">
-          <use xlink:href="images/Sprite.svg#search"></use>
+          <use href="images/Sprite.svg#search"></use>
         </svg>
         Search
       </button>
@@ -164,7 +164,7 @@
       <div class="feature__content" data-aos="fade-right">
         <span class="icon-container">
           <svg class="icon icon--primary">
-            <use xlink:href="images/Sprite.svg#easy"></use>
+            <use href="images/Sprite.svg#easy"></use>
           </svg>
         </span>
 
@@ -188,7 +188,7 @@
       <div class="feature__content">
         <span class="icon-container">
           <svg class="icon icon--primary">
-            <use xlink:href="images/Sprite.svg#easy"></use>
+            <use href="images/Sprite.svg#easy"></use>
           </svg>
         </span>
 
@@ -212,7 +212,7 @@
       <div class="feature__content">
         <span class="icon-container">
           <svg class="icon icon--primary">
-            <use xlink:href="images/Sprite.svg#easy"></use>
+            <use href="images/Sprite.svg#easy"></use>
           </svg>
         </span>
 
@@ -258,7 +258,7 @@
           <div class="media">
             <div class="media__image">
               <svg class="icon icon--primary">
-                <use xlink:href="images/Sprite.svg#computer"></use>
+                <use href="images/Sprite.svg#computer"></use>
               </svg>
             </div>
             <div class="media__body">
@@ -273,7 +273,7 @@
           <div class="media">
             <div class="media__image">
               <svg class="icon icon--primary">
-                <use xlink:href="images/Sprite.svg#growth"></use>
+                <use href="images/Sprite.svg#growth"></use>
               </svg>
             </div>
             <div class="media__body">
@@ -288,7 +288,7 @@
           <div class="media">
             <div class="media__image">
               <svg class="icon icon--primary">
-                <use xlink:href="images/Sprite.svg#wordpress"></use>
+                <use href="images/Sprite.svg#wordpress"></use>
               </svg>
             </div>
             <div class="media__body">
@@ -321,7 +321,7 @@
               <img src="images/testimonial.jpg" alt="" />
               <span class="icon-container">
                 <svg class="icon icon--accent icon--small">
-                  <use xlink:href="images/Sprite.svg#quotes"></use>
+                  <use href="images/Sprite.svg#quotes"></use>
                 </svg>
               </span>
             </div>
@@ -335,7 +335,7 @@
                 <div class="media">
                   <div class="media__image">
                     <svg class="icon icon--primary quote__line">
-                      <use xlink:href="images/Sprite.svg#line"></use>
+                      <use href="images/Sprite.svg#line"></use>
                     </svg>
                   </div>
                   <div class="media__body">
@@ -370,13 +370,13 @@
   <footer class="block block--dark footer">
     <div class="container grid footer__sections">
       <section class="collapsible collapsible---expanded footer__section">
-        <header class="collapsible__header">
+        <div class="collapsible__header">
           <h2 class="collapsible__heading footer__heading">Item 1</h2>
 
           <svg class="icon icon--white collapsible__chevron">
-            <use xlink:href="images/Sprite.svg#chevron"></use>
+            <use href="images/Sprite.svg#chevron"></use>
           </svg>
-        </header>
+        </div>
         <div class="collapsible__content">
           <ul class="list">
             <li><a href="#">Web Hosting</a></li>
@@ -386,13 +386,13 @@
         </div>
       </section>
       <section class="collapsible footer__section">
-        <header class="collapsible__header">
+        <div class="collapsible__header">
           <h2 class="collapsible__heading footer__heading">Item 2</h2>
 
           <svg class="icon icon--white collapsible__chevron">
-            <use xlink:href="images/Sprite.svg#chevron"></use>
+            <use href="images/Sprite.svg#chevron"></use>
           </svg>
-        </header>
+        </div>
         <div class="collapsible__content">
           <ul class="list">
             <li><a href="#">Web Hosting</a></li>
@@ -402,13 +402,13 @@
         </div>
       </section>
       <section class="collapsible footer__section">
-        <header class="collapsible__header">
+        <div class="collapsible__header">
           <h2 class="collapsible__heading footer__heading">Item 3</h2>
 
           <svg class="icon icon--white collapsible__chevron">
-            <use xlink:href="images/Sprite.svg#chevron"></use>
+            <use href="images/Sprite.svg#chevron"></use>
           </svg>
-        </header>
+        </div>
         <div class="collapsible__content">
           <ul class="list">
             <li><a href="#">Web Hosting</a></li>
@@ -417,18 +417,16 @@
           </ul>
         </div>
       </section>
-      <section class="footer__brand">
+      <div class="footer__brand">
         <img src="images/logo.svg" alt="" />
         <p class="footer__copyright">copyright 2021</p>
-      </section>
+      </div>
     </div>
   </footer>
 
-  <body>
-    <script src="main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
