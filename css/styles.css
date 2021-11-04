@@ -42,6 +42,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  font-weight: 200px;
 }
 p {
   margin-top: 0;
@@ -117,7 +118,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: #16005e;
 }
 .list--inline .list__item {
   display: inline-block;
@@ -126,6 +126,7 @@ a {
 .list--tick {
   list-style-image: url(../images/icons/tick.svg);
   padding-left: 3rem;
+  color: #16005e;
 }
 
 .list--tick .list__item {
@@ -356,6 +357,7 @@ input {
 
 .media {
   display: flex;
+  margin-bottom: 4rem;
 }
 .media__title {
   margin: 0;
@@ -536,7 +538,9 @@ input {
   background: #000;
   color: #7b88b7;
 }
-.block--dark .block__heading {
+.block--dark .block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: white;
 }
 .block--skewed-right {
@@ -544,8 +548,8 @@ input {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 80%);
 }
 .block--skewed-left {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding-bottom: calc(var(--padding-vertical) + 7rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 90%);
 }
 
 .container {
@@ -680,5 +684,24 @@ input {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2x;
+  }
+}
+
+/* showcase block */
+
+.block-showcase__image > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+  .block-showcase__image {
+    justify-self: end;
+  }
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 700px;
   }
 }
